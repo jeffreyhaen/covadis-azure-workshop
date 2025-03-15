@@ -1,0 +1,1 @@
+# covadis-azure-workshop
