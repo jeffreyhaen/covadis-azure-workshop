@@ -1,0 +1,6 @@
+@Covadis.Azure.Workshop.API_HostAddress = https://localhost:7237
+
+GET {{Covadis.Azure.Workshop.API_HostAddress}}/orders/
+Accept: application/json
+
+###

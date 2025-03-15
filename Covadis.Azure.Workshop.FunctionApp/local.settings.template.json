@@ -1,0 +1,36 @@
+// Copy this file to local.settings.json and replace the values with your own.
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+
+    "OrderShipmentCheckerFunction": "0 * * * * *", // Run every minute
+
+    "ServiceBus:Topics:OrderCreated": "demo-order-created", // Must have Azure Service Bus Standard tier for topics
+    "ServiceBus:OrderEmailerSubscription": "order-emailer-function",
+    "ServiceBus:OrderPaymentHandlerSubscription": "order-payment-handler-function",
+
+    "Storage:BlobContainer:Demo": "demo-container"
+
+    //"Logging:LogLevel:Default": "Debug",
+    //"Logging:LogLevel:Microsoft": "Warning",
+    //"Logging:LogLevel:Microsoft.Hosting.Lifetime": "Information",
+    //"Logging:LogLevel:Azure.Core": "Warning",
+    //"Logging:LogLevel:Azure.Messaging.ServiceBus": "Warning",
+    //"Logging:LogLevel:Microsoft.Azure.ServiceBus": "Warning",
+
+    //"AzureFunctionsJobHost:logging:logLevel:default": "Information",
+    //"AzureFunctionsJobHost:logging:logLevel:Microsoft": "Warning",
+    //"AzureFunctionsJobHost:logging:logLevel:Microsoft.Hosting.Lifetime": "Information",
+    //"AzureFunctionsJobHost:logging:logLevel:Azure.Core": "Error",
+    //"AzureFunctionsJobHost:logging:logLevel:Azure.Messaging.ServiceBus": "Error",
+    //"AzureFunctionsJobHost:logging:logLevel:Microsoft.Azure.ServiceBus": "Error"
+  },
+
+  "ConnectionStrings": {
+    "DemoDatabase": "Server=tcp:{servername}.database.windows.net,1433; Database={databasename};User Id={username};Password={password};",
+    "DemoServiceBus": "Endpoint=sb://{namespace}.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey={key}",
+    "DemoStorageAccount": "DefaultEndpointsProtocol=https;AccountName={accountname};AccountKey={accountkey};EndpointSuffix=core.windows.net"
+  }
+}
