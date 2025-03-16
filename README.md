@@ -31,5 +31,5 @@
   - [AZ-204: Implement Azure App Service web apps / Explore Azure App Service](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/1-introduction) Exercise unit 7
   - [Host a web application with Azure App Service](https://learn.microsoft.com/en-us/training/modules/host-a-web-app-with-azure-app-service/1-introduction) Exercise unit 7
 
-Login with the same account where you activated the sandbox and switch to the sandbox tenant:
+Login with the same account where you activated the sandbox in Microsoft Learn and switch to the sandbox tenant in the Azure portal:
  ![image](https://github.com/user-attachments/assets/bfd5b860-974a-45d5-bde1-3541104883c4)
