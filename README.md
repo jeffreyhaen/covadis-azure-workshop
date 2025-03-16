@@ -33,3 +33,9 @@
 
 Login with the same account where you activated the sandbox in Microsoft Learn and switch to the sandbox tenant in the Azure portal:
  ![image](https://github.com/user-attachments/assets/bfd5b860-974a-45d5-bde1-3541104883c4)
+
+Search for subscriptions in the Azure portal and you will find your sandbox Azure subscription:
+![image](https://github.com/user-attachments/assets/a4a72325-5f36-41de-9d91-7083bc5c1269)
+
+Within this Azure subscription you are able to create Azure resources like Azure App Service, Azure SQL Server, etc. Every resource must be inside an Azure resource group.
+![image](https://github.com/user-attachments/assets/2535889d-b5eb-4d75-9557-6cff4e066097)
