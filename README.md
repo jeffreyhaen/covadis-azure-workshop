@@ -7,17 +7,29 @@
 
 ## Tools
 - Visual Studio
+- Azure Data Studio or SQL Server Management Studio (SSMS)
 - Azurite
 - ServiceBusExplorer
 - Microsoft Azure Storage Explorer
 
 ## Azure resources
-- Azure App Service Plan
-- Azure App Service
-- Azure Function App
-- Azure Application Insights
-- Azure Log Analytics Workspace
-- Azure Storage Account
-- Azure SQL Server
-- Azure SQL Database
-- Azure Service Bus
+- Azure Resource Group _(rg-)_
+- Azure App Service Plan _(asp-)_
+- Azure App Service _(app-)_
+- Azure Function App _(func-)_
+- Azure Application Insights _(appi-)_
+- Azure Log Analytics Workspace _(log-)_
+- Azure Storage Account _(st)_
+- Azure SQL Server _(sql-)_
+- Azure SQL Database _(*)_
+- Azure Service Bus Namespace _(sbns-)_
+
+### Azure Sandbox
+- Azure Portal: https://portal.azure.com/
+- Microsoft Learn
+  - [10 sandboxes per day, 4 hours per sandbox](https://community.dynamics.com/blogs/post/?postid=990c7a16-9426-427f-9a2c-a94df8dad1f5)
+  - [AZ-204: Implement Azure App Service web apps / Explore Azure App Service](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/1-introduction) Exercise unit 7
+  - [Host a web application with Azure App Service](https://learn.microsoft.com/en-us/training/modules/host-a-web-app-with-azure-app-service/1-introduction) Exercise unit 7
+
+Login with the same account where you activated the sandbox and switch to the sandbox tenant:
+ ![image](https://github.com/user-attachments/assets/bfd5b860-974a-45d5-bde1-3541104883c4)
