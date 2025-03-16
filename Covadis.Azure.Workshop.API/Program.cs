@@ -6,6 +6,13 @@ using Covadis.Azure.Database;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+    .AddEnvironmentVariables();
+
 var services = builder.Services;
 var configuration = builder.Configuration;
 
@@ -40,7 +47,6 @@ app.UseSwaggerUI(options =>
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-
 
 app.MapControllers();
 

@@ -8,12 +8,17 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 var host = new HostBuilder()
+    .ConfigureAppConfiguration((context, builder) =>
+    {
+        builder
+            .AddJsonFile(Path.Combine(context.HostingEnvironment.ContentRootPath, "appsettings.json"), optional: true, reloadOnChange: false)
+            .AddJsonFile(Path.Combine(context.HostingEnvironment.ContentRootPath, $"appsettings.{context.HostingEnvironment.EnvironmentName}.json"), optional: true, reloadOnChange: false)
+            .AddEnvironmentVariables();
+    })
     .ConfigureFunctionsWebApplication()
     .ConfigureServices((builder, services) =>
     {
         var configuration = builder.Configuration;
-        services.AddApplicationInsightsTelemetryWorkerService();
-        services.ConfigureFunctionsApplicationInsights();
 
         services.AddDbContext<DemoDbContext>(optionsBuilder =>
         {
@@ -30,8 +35,6 @@ var host = new HostBuilder()
     {
         var loggingConfig = hostingContext.Configuration.GetSection("Logging");
         loggingBuilder.AddConfiguration(loggingConfig);
-        loggingBuilder.AddConsole();
-        loggingBuilder.AddApplicationInsights();
     })
     .Build();
 
