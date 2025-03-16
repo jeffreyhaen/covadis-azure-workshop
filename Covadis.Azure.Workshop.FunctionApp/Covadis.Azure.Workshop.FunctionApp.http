@@ -1,0 +1,7 @@
+@Covadis.Azure.Workshop.FunctionApp_HostAddress = http://localhost:7093
+@orderId = 1
+
+GET {{Covadis.Azure.Workshop.FunctionApp_HostAddress}}/api/orders/{{orderId}}
+Accept: application/json
+
+###
