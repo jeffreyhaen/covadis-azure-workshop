@@ -19,10 +19,10 @@ public class OrderShipmentCheckerFunction
 
     public OrderShipmentCheckerFunction(
         DemoDbContext dbContext,
-        ILoggerFactory loggerFactory)
+        ILogger<OrderShipmentCheckerFunction> logger)
     {
+        this.logger = logger;
         this.dbContext = dbContext;
-        logger = loggerFactory.CreateLogger<OrderShipmentCheckerFunction>();
     }
 
     [Function("OrderShipmentCheckerFunction")]
