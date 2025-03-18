@@ -28,6 +28,7 @@
 - Azure Portal: https://portal.azure.com/
 - Microsoft Learn
   - [10 sandboxes per day, 4 hours per sandbox](https://community.dynamics.com/blogs/post/?postid=990c7a16-9426-427f-9a2c-a94df8dad1f5)
+  - [AZ-900: Describe the core architectural components of Azure](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/1-introduction) Exercise unit 4
   - [AZ-204: Implement Azure App Service web apps / Explore Azure App Service](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-app-service/1-introduction) Exercise unit 7
   - [Host a web application with Azure App Service](https://learn.microsoft.com/en-us/training/modules/host-a-web-app-with-azure-app-service/1-introduction) Exercise unit 7
 
